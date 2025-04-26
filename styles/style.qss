@@ -1,0 +1,177 @@
+/* styles/style.qss */
+
+QMainWindow {
+    background-color: #2C3E50;
+}
+
+QPushButton {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #2980B9;
+}
+
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #ECF0F1;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    padding: 4px;
+    color: #000000;         /* force black text */
+}
+
+/* Restore main UI labels to light color */
+QLabel {
+    color: #ECF0F1;
+    font-weight: bold;
+}
+
+QListWidget {
+    background-color: #ECF0F1;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    color: #000000;         /* force black list text */
+}
+
+QListWidget::item {
+    color: #000000;
+}
+
+/* Buttons inside QListWidget (the 'X' buttons) */
+QListWidget QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    padding: 0;
+}
+
+/* override remove-button specifically */
+QPushButton#removeButton {
+    background-color: transparent;
+    color: #333333;
+    border: none;
+    padding: 0;
+}
+
+/* disabled state */
+QPushButton:disabled {
+    background-color: #95a5a6;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+/* Override labels & buttons in the Confirm Submission dialog only */
+QDialog[windowTitle="Confirm Submission"] QLabel,
+QDialog[windowTitle="Confirm Submission"] QPushButton {
+    color: #000000;        /* black for dialog text */
+}
+
+/* Override labels in RemoteTransferDialog for better contrast */
+QDialog#remoteTransferDialog QLabel#usernameLabel,
+QDialog#remoteTransferDialog QLabel#passwordLabel,
+QDialog#remoteTransferDialog QLabel#serverInfoLabel {
+    color: #000000;
+}
+
+/* Style QInputDialog for dark theme */
+QInputDialog QLabel {
+    color: #000000;
+    font-size: 14px;
+}
+
+QInputDialog QLineEdit {
+    color: #000000;
+    background-color: #ECF0F1;
+    font-size: 14px;
+}
+
+QInputDialog QPushButton {
+    font-size: 14px;
+}
+
+QMessageBox {
+    background-color: #ECF0F1;
+}
+
+QMessageBox QLabel,
+QMessageBox QAbstractButton {
+    color: #000000;
+    font-size: 12pt;
+}
+
+QMessageBox QLabel#qt_msgbox_label,
+QMessageBox QLabel#qt_msgbox_informativetext {
+    color: #000000;
+}
+
+/* ===== Global dialog styling ===== */
+QDialog {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Standard labels in dialogs: normal weight, dark gray */
+QDialog QLabel {
+    color: #333333;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* Line-edits in dialogs */
+QDialog QLineEdit {
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 6px;
+    color: #333333;
+}
+
+/* Dialog buttons: smaller radius, lighter hover */
+QDialog QPushButton {
+    background-color: #5A9BD4;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: normal;
+    font-size: 12px;
+}
+QDialog QPushButton:hover {
+    background-color: #4A89C0;
+}
+
+/* Confirm Submission dialog width override */
+QDialog[windowTitle="Confirm Submission"] {
+    min-width: 480px;
+}
+
+/* Message boxes share the same look */
+QMessageBox {
+    background-color: #FFFFFF;
+}
+QMessageBox QLabel {
+    color: #333333;
+    font-weight: normal;
+}
+QMessageBox QPushButton {
+    background-color: #5A9BD4;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: normal;
+    font-size: 12px;
+}
+QMessageBox QPushButton:hover {
+    background-color: #4A89C0;
+}
+QGroupBox::title {
+  color: #ECF0F1;
+  subcontrol-origin: margin;
+  subcontrol-position: top center;
+}
