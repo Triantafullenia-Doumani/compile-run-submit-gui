@@ -25,7 +25,7 @@ Cimple Executor GUI is a lightweight Python application that provides a graphica
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Triantafullenia-Doumani/Submission-and-Management-System-for-Student-Assignments.git
+   git clone https://github.com/Triantafullenia-Doumani/compile-run-submit-gui.git
    cd Submission-and-Management-System-for-Student-Assignments
    ```
 2. Install required packages:
